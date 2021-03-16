@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { Button } from './button';
 import { useMsal } from '../utility/auth/msalContext';
-import { loginRequest } from "./../utility/auth/msalConfig";
+import { loginRequest } from "../utility/auth/msalConfig";
 import classes from '../styles/login.module.sass'
 
 function Login() {

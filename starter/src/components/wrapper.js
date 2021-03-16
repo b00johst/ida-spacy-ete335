@@ -11,7 +11,7 @@ import Header from '../components/header'
 import { useMsal } from '../utility/auth/msalContext';
 import { faqData } from '../data/FaqData'
 
-
+ 
 const Wrapper = ({children }) => {
 
     const {isAuthenticated} = useMsal();

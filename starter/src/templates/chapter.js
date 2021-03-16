@@ -10,9 +10,9 @@ import { ChapterItem } from '../components/chapter-item'
 import Navigation from '../components/navigation'
 import classes from '../styles/task.module.sass'
 import Burger from '../components/burger'
-import Wrapper from '../components/Wrapper'
+import Wrapper from '../components/wrapper'
 
-import { msalConfig, loginRequest } from './../utility/auth/msalConfig';
+import { msalConfig, loginRequest } from '../utility/auth/msalConfig';
 import { MsalProvider } from '../utility/auth/msalContext';
 import Login from '../components/login'
 import Footer from '../components/footer'
