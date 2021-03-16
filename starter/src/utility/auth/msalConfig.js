@@ -5,7 +5,7 @@ export const msalConfig = {
         clientId: 'c6b6983e-0fcd-4337-82e8-5b7391841773',//ida-spacy-test-ar (in production),                     
         // 913f18ec-7f26-4c5f-a816-784fe9a58edd is the tenantId for liuonline.onmicrosoft.com
         authority: 'https://login.microsoftonline.com/913f18ec-7f26-4c5f-a816-784fe9a58edd',
-        redirectUri: 'https://localhost:8000',
+        redirectUri: 'https://happy-glacier-0ed436203.azurestaticapps.net',
     },
     cache: {
         cacheLocation: "localStorage", // This configures where your cache will be stored
