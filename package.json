@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-burger-menu": "^3.0.3",
+    "react-icons": "^4.2.0"
+  }
+}

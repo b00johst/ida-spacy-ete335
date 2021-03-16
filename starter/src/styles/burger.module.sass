@@ -1,0 +1,100 @@
+// quick fix to remove side bar. Should be refactored depending on how we want it.
+$breakpoint-tablet: 9999px //1200px
+
+
+// Filen är full av hacks, vi byter det här med en navbar så blir det mycket bättre.
+.wrapperx
+    display: flex
+    flex-direction: column
+    // Nav täcker hela sidan
+    top: 0px
+    left: 0px
+    margin: 0em
+    position: sticky
+    top: 5px
+    z-index: 1000
+    height: calc(100vh - 5px)
+    // End nav täcker hela sidan
+
+
+.wide-container
+    height: 100%
+    @media (max-width: $breakpoint-tablet)
+        display: none
+    @media (min-width: $breakpoint-tablet)
+        display: block
+
+.mobile-container
+    width: 90vw
+    // Nav täcker hela sidan
+    width: 100%
+    // End nav täcker hela sidan
+    height: 90vh
+    z-index: 6
+    
+    @media (max-width: $breakpoint-tablet)
+        display: block
+    @media (min-width: $breakpoint-tablet)
+        display: none
+
+
+
+.mobile-content
+    display: flex
+    height: 90vh
+    position: fixed
+    width: 95%
+    background: var(--color-secondary-back)
+    align-items: center
+    flex-direction: column
+    padding: 30px
+    padding-top: 75px
+
+    // Nav täcker hela sidan
+    width: 100%
+    // End nav täcker hela sidan
+
+.hiding
+    @media (max-width: $breakpoint-tablet)
+        transform: translateX(-200%)
+
+    @media (min-width: $breakpoint-tablet)
+        transform: translateX(0%)
+.wrapperx
+    @media (max-width: $breakpoint-tablet)
+        position: absolute
+        height: 50px
+
+    @media (min-width: $breakpoint-tablet)
+        transform: translateX(0%)
+    
+
+.toggler
+    position: fixed
+    top: 1px
+    font-size: 35px
+    z-index: 7
+    
+    // Nav täcker hela sidan
+    left: 5px
+    // End nav täcker hela sidan
+
+
+    @media (max-width: $breakpoint-tablet)
+        display: block
+    @media (min-width: $breakpoint-tablet)
+        display: none
+
+
+.ani    
+    transform-origin: center
+    transition: all 0.1s
+    //font-family: 'Times', 'Times New Roman', 'serif', 'sans-serif', 'EmojiSymbols', 'apple color emoji'
+    font-size: 50px
+    line-height: 1em
+    user-select: none
+    cursor: pointer
+
+.burger-closed-icon
+    user-select: none
+    cursor: pointer

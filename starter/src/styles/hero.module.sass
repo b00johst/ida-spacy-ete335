@@ -1,0 +1,93 @@
+.container
+
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    height: var(--hero-height);
+    position: relative;
+    margin-top: -80px;
+    padding: 0 1rem;
+    color: #fff;
+
+    :before
+        content: "";
+        position: absolute;
+        top: 0
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+    
+
+
+.background
+    background: linear-gradient(-45deg, rgba(229,93,135,.7), rgba(95,195,228,.7)), center center / cover no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+.content
+    z-index: 3;
+    height: calc(100vh-80px);
+    max-height: 100%;
+    padding: 0rem calc((100vq-1300px)/2)
+
+
+.items
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    max-height: 100%;
+    padding: 0;
+    color: #fff;
+    line-height: 1.1;
+    font-weight: bold;
+
+.title
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+    letter-spacing: 3px;
+    padding: 0 1rem;
+
+
+.infotext
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
+    margin-bottom: 2rem;
+    font-weight: 400;
+    width: 50%
+    line-height: 2.8rem;
+
+
+
+.button
+    margin-top: 5rem
+    display: flex;
+    align-items: center;
+    background: #077BF1;
+    white-space: nowrap;
+    color: #fff;
+    padding: 16px 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    min-width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s !important;
+    border-radius: 50px;
+
+    &:hover
+            background: #F26A2E ;
+            transform: translateY(-2px);
+
+    
+
