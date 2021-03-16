@@ -1,6 +1,6 @@
 var graph = require('@microsoft/microsoft-graph-client');
 
-const apiBaseUrl = "https://localhost:44352"; // "https://ida-spacy-progress-api-test-wa.azurewebsites.net"; // "https://localhost:44352"
+const apiBaseUrl = "https://ida-spacy-progress-api-test-wa.azurewebsites.net"; //  // "https://localhost:44352"
 
 function getAuthenticatedClient(accessToken) {
     const client = graph.Client.init({
